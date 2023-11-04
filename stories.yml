@@ -1,0 +1,43 @@
+version: "3.1"
+stories:
+
+- story: greet_user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: ask_genre
+  steps:
+    - intent: suggest_movie
+    - action: utter_ask_genre
+
+- story: suggest_genre
+  steps:
+    - intent: inform
+    - action: action_recommend_movie
+
+- story: did_that_help
+  steps:
+    - intent: okay
+    - action: utter_did_that_help
+
+- story: mood_happy
+  steps:
+    - intent: affirm
+    - action: utter_happy
+
+- story: mood_unhappy
+  steps:
+    - intent: deny
+    - action: utter_sorry
+  
+- story: reply_bye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: bot_challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot
+
