@@ -1,0 +1,38 @@
+# Configuration for Rasa NLU.
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+
+# Configuration for Rasa Core.
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+  max_history: 5
+  epochs: 100
+- name: RulePolicy
+
+# Configuration for Rasa Action Server.
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Configuration for Rasa NLU training.
+nlu:
+- data: nlu.yml
+
+# Configuration for Rasa Core training.
+core:
+  stories:
+  - data: stories.yml
+
+# Configuration for Rasa domain.
+rules: rules.yml
+assistant_id: 20230524-081920-meek-buy-in
