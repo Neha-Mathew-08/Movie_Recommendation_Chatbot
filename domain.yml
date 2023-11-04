@@ -1,0 +1,73 @@
+version: "3.1"
+
+actions:
+  - action_recommend_movie
+  #- action_default_fallback
+
+entities:
+  - genre
+
+slots:
+  genre:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: genre
+
+#slots:
+  #genre:
+    #type: categorical
+    #values:
+      #- crime
+      #- romance
+      #- comedy
+      #- action
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - inform
+  - suggest_movie
+  - okay
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+    - text: "Hi there! How can I help you?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+    - text: "See you later! Take care!"
+
+  utter_ask_genre:
+    - text: "What genre of movies are you interested in? We have action, comedy, romance, and crime."
+    #- text: "Which is your favorite genre, we have crime,action, comedy and romance movie."
+
+  utter_happy:
+    - text: "I'm glad you liked the recommendation! Enjoy the movie!"
+    - text: "Great! I hope you enjoy watching the movie. Let me know if you need any more suggestions."
+
+  utter_sorry:
+    - text: "I'm sorry if my recommendation didn't meet your expectations. Let me know if there's anything else I can assist you with."
+
+  utter_bot:
+    - text: "I am a chatbot powered by RASA"
+
+  utter_did_that_help:
+    - text: "Did that help?"
+    - text: "Did you like the recommendation?"
+    - text: "Did that help?"
+  
+
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
