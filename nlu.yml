@@ -1,0 +1,323 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+
+- intent: goodbye
+  examples: |
+    - c u
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - adios
+
+- intent: affirm
+  examples: |
+    - yes
+    - ya
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    
+- intent: okay
+  examples: |
+    - ok
+    - thanks
+    - thank you
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - You're not human, right?
+    - I think you're an AI
+    - How do I know you're not a machine?
+
+- intent: inform
+  examples: |
+    - I'm a fan of [action](genre) movies.
+    - [action](genre) films are right up my alley.
+    - I have a strong penchant for [action](genre) movies.
+    - I like watching [comedy](genre) movies.
+    - [comedy](genre) movies are my favorite.
+    - I would like to watch a [crime](genre) thriller.
+    - I like movies under the genre [romance](genre).
+    - "I like [action](genre) movies."
+    - "I'm into [comedy](genre) films."
+    - "I'm a fan of [romance](genre)."
+    - "I enjoy watching [crime](genre) thrillers."
+    - "I prefer [romance](genre) films."
+    - "I'm looking for [crime](genre) movies."
+    - "I love [comedy](genre)."
+    - "[action](genre) movies are my favorite."
+    - "[crime](genre) films are what I love."
+    - "My go-to is [comedy](genre)."
+    - "I enjoy [romance](genre) movies the most."
+    - "I'm in the mood for some [action]genre) films."
+    - "[crime](genre) is what I prefer."
+    - "I want to watch a [comedy](genre) movie."
+    - "[action](genre)"
+    - "[crime](genre)"
+    - "[comedy](genre)"
+    - "[romance](genre)"
+    - "[crime](genre) movies are my guilty pleasure."
+    - "I'm a sucker for [crime](genre) flicks."
+    - "My movie collection is dominated by [crime](genre) films."
+    - "Whenever I see a new [crime](genre) movie trailer, I get excited."
+    - "I love discussing [crime](genre) movies with fellow enthusiasts."
+    - "[crime](genre) films always keep me on the edge of my seat."
+    - "I find the psychology of criminals fascinating in [crime](genre) movies."
+    - "The [crime](genre) genre allows for intricate plots and twists."
+    - "I enjoy analyzing the motives and actions of characters in [crime](genre) movies."
+    - "[crime](genre) films often explore complex moral dilemmas."
+    - "I'm drawn to the gritty and realistic portrayal of [crime](genre) in movies."
+    - "I can spend hours researching and watching [crime](genre) documentaries."
+    - "[crime](genre) movies provide insight into different criminal underworlds."
+    - "I appreciate the skillful storytelling in [crime](genre) films."
+    - "Watching [crime](genre) movies is a great way to unwind after a long day."
+    - "I'm always up for a movie marathon featuring [crime](genre) thrillers."
+    - "My favorite movie quotes mostly come from [crime](genre) films."
+    - "I enjoy analyzing the cinematography and direction in [crime](genre) movies."
+    - "[crime](genre) movies offer a unique blend of suspense and action."
+    - "I'm fascinated by the cat-and-mouse games in [crime](genre) films."
+    - "I often find myself researching real-life [crime](genre) that inspire movies."
+    - "I get a thrill from solving mysteries and unraveling clues in [crime](genre) films."
+    - "The character development in [crime](genre) movies is often superb."
+    - "I love dissecting the intricate heists portrayed in [crime](genre) movies."
+    - "[crime](genre) movies make me question the boundaries of right and wrong."
+    - "I appreciate the dark and atmospheric tone of [crime](genre) films."
+    - "The soundtrack in [crime](genre) movies adds another layer of intensity."
+    - "I'm always recommending [crime](genre) movies to my friends and family."
+    - "I enjoy watching [crime](genre) movies from different eras and countries."
+    - "I follow my favorite [crime](genre) directors and actors for their latest projects."
+    - "I'm intrigued by the underworld dynamics depicted in [crime](genre) films." 
+    - "I find the historical context of [crime](genre) movies intriguing."
+    - "[crime](genre) movies often shed light on societal issues and corruption."
+    - "I can't resist a good [crime](genre) thriller with unexpected plot twists."
+    - "The suspense in [crime](genre) movies keeps me engaged until the very end."
+    - "I'm a fan of [crime](genre) movies that explore the moral gray areas."
+    - "I appreciate the attention to detail in [crime](genre) films, especially in crime scene recreations."
+    - "The character dynamics and interactions in [crime](genre) movies are always intriguing."
+    - "I love how [crime](genre) movies often challenge my perceptions and assumptions."
+    - "The high stakes and adrenaline rush in [crime](genre) films keep me hooked."
+    - "I enjoy discussing the symbolism and metaphors used in [crime](genre) movies."
+    - "I'm always on the lookout for hidden gems in the [crime](genre) genre."
+    - "I admire the work of [crime](genre) movie screenwriters for crafting compelling stories."
+    - "I often find myself researching the true events that inspired [crime](genre) movies."
+    - "[crime](genre) movies offer a glimpse into the criminal justice system."
+    - "I love dissecting the motives and strategies of criminals in [crime](genre) movies."
+    - "The suspenseful music in [crime](genre) movies heightens the overall experience."
+    - "I enjoy analyzing the cinematography and lighting choices in [crime](genre) films."
+    - "[crime](genre) movies provide an escape into a world of intrigue and danger."
+    - "I'm always excited for the next [crime](genre) movie to hit the theaters."
+    - "[romance](genre) movies are my go-to genre for a cozy night in."
+    - "My heart melts whenever I watch a good [romance](genre) film."
+    - "I can't resist a well-crafted [romance](genre) story on the big screen."
+    - "I'm always on the lookout for the latest [romance](genre) movie releases."
+    - "I enjoy discussing the emotional depth of [romance](genre) films."
+    - "[romance](genre) movies have a special place in my heart."
+    - "The chemistry between the lead actors in [romance](genre) films captivates me."
+    - "I'm drawn to the heartfelt moments and tender gestures in [romance](genre) movies."
+    - "I appreciate the way [romance](genre) movies explore the complexities of love."
+    - "[romance](genre) films often leave me feeling warm and fuzzy inside."
+    - "I love analyzing the character development in [romance](genre) movies."
+    - "The cinematography in [romance](genre) films enhances the romantic atmosphere."
+    - "I'm a sucker for a good love triangle in a [romance](genre) movie."
+    - "Watching [romance](genre) movies is like taking a journey through different kinds of love."
+    - "I enjoy the anticipation and build-up of [romance](genre) in movies."
+    - "[romance](genre) films transport me to a world of passion and longing."
+    - "I'm always recommending [romance](genre) movies to my friends seeking a feel-good watch."
+    - "I appreciate the heartfelt dialogue and romantic gestures in [romance](genre) films."
+    - "[romance](genre) movies offer a window into the intricacies of relationships."
+    - "I'm fascinated by the various cultural perspectives on [romance](genre) depicted in movies."
+    - "I love the bittersweet moments and emotional roller coasters in [romance](genre) films."
+    - "The soundtracks in romance movies add an extra layer of [romance](genre)."
+    - "I often find myself invested in the love stories of the characters in [romance](genre) films."
+    - "[romance](genre) movies teach me valuable lessons about love and relationships."
+    - "I'm a fan of [romance](genre) movies that explore the challenges and triumphs of love."
+    - "The settings and backdrops in [romance](genre) films create a romantic ambiance."
+    - "I enjoy the escapism that [romance](genre) movies provide."
+    - "[romance](genre) films evoke a range of emotions, from joy to heartbreak."
+    - "I follow my favorite [romance](genre) directors and actors for their latest projects."
+    - "I'm always curious to see how [romance](genre) movies unfold and resolve their conflicts."
+    - "I appreciate the chemistry and on-screen [romance](genre) between the actors."
+    - "[romance](genre) movies often inspire me to cherish and appreciate my own relationships."
+    - "I find comfort in the predictable yet heartwarming nature of [romance](genre) films."
+    - "The passion and intensity portrayed in [romance](genre) movies resonate with me."
+    - "I enjoy discussing the symbolism and metaphors used in [romance](genre) films."
+    - "I'm a fan of [romance](genre) movies that break stereotypes and challenge conventions."
+    - "[romance](genre) movies capture the essence of human connection and vulnerability."
+    - "The costumes and visual aesthetics in [romance](genre) films transport me to another era."
+    - "I'm always excited to see the chemistry and sparks fly in [romance](genre) movies."
+    - "[romance](genre) movies often leave me daydreaming about love and romance."
+    - "I appreciate the tender and heartfelt moments shared between the characters in [romance](genre) films."
+    - "I enjoy analyzing the narrative structure and pacing of [romance](genre) movies."
+    - "[romance](genre) movies remind me of the beauty and power of love."
+    - "The dialogue and conversations in [romance](genre) films make me feel like a part of the story."
+    - "I'm a huge fan of [action](genre) movies; the adrenaline rush keeps me hooked."
+    - "[action](genre) films are my preferred genre for a thrilling movie experience."
+    - "I can't resist the explosive [action](genre) sequences in movies."
+    - "My movie collection is dominated by [action](genre) films."
+    - "Whenever there's a new [action](genre) movie release, I'm first in line to watch it."
+    - "I love discussing the intense fight scenes and stunts in [action](genre) films."
+    - "[action](genre) movies never fail to get my heart racing with excitement."
+    - "The high-octane [action](genre) in films is my ultimate form of entertainment."
+    - "I enjoy analyzing the choreography and precision in [action](genre) sequences."
+    - "[action](genre) films transport me to a world of thrilling adventures and heroic feats."
+    - "I'm drawn to the fast-paced storytelling and relentless [action](genre) in movies."
+    - "The special effects in action films enhance the overall [action](genre) experience."
+    - "I'm a sucker for a well-executed car chase in an [action](genre) movie."
+    - "Watching [action](genre) movies is my go-to way to unwind and escape reality."
+    - "I appreciate the skillful direction and cinematography in [action](genre) films."
+    - "I'm always up for an [action](genre) movie marathon with friends."
+    - "[action](genre) movies fuel my desire for excitement and edge-of-your-seat suspense.
+    - "I admire the physicality and athleticism of the actors in [action](genre) films.""
+    - "The adrenaline-fueled rush in [action](genre) movies keeps me thoroughly entertained."
+    - "I'm fascinated by the intricacies of fight choreography in [action](genre) films."
+    - "[action](genre) movies often feature larger-than-life heroes and epic battles."
+    - "I find the adrenaline-pumping soundtracks in [action](genre) films captivating."
+    - "I'm always recommending [action](genre) movies to friends who crave thrilling experiences."
+    - "The seamless blend of [action](genre) and storytelling in movies keeps me engaged."
+    - "I follow my favorite [action](genre) stars and directors for their latest projects."
+    - "I love dissecting the tactical strategies and missions in [action](genre) films."
+    - "[action](genre) movies provide an escape into a world of daring escapades and heroic triumphs."
+    - "I'm a fan of [action](genre) films that push the boundaries of what's visually possible."
+    - "The explosive [action](genre) sequences in movies ignite my imagination."
+    - "I appreciate the adrenaline-fueled rush that [action](genre) movies bring to the screen."
+    - "I enjoy analyzing the character arcs and personal growth in [action](genre) films."
+    - "[action](genre) movies often showcase impressive weaponry and technological advancements."
+    - "I'm intrigued by the complex plot twists and suspenseful moments in [action](genre) films."
+    - "I'm always excited to see the hero's journey unfold in [action](genre) films."
+    - "I admire the dedication and physical training that goes into making [action](genre) movies."
+    - "[action](genre) films inspire me to embrace courage, determination, and resilience."
+    - "I enjoy discussing the impact and influence of [action](genre) movies on popular culture."
+    - "I can't resist the thrill of watching a good [action](genre) climax in a movie."
+    - "The breathtaking visuals and set pieces in [action](genre) films leave me in awe."
+    - "I'm a fan of action movies that balance intense [action](genre) with compelling storytelling."
+    - "[action](genre) movies take me on an exhilarating roller coaster ride of emotions."
+    - "I appreciate the dynamic camerawork and editing choices in [action](genre) films."
+    - "I'm always on the lookout for hidden gems in the [action](genre) genre."
+    - "[action](genre) movies remind me of the power of determination and the triumph of good over evil."
+    - "I love dissecting the intricate fight choreography and stunt work in [action](genre) films."
+    - "The non-stop excitement and energy in [action](genre) movies keep me thoroughly entertained."
+    - "I enjoy analyzing the impact of [action](genre) movies on the development of filmmaking techniques."
+    - "Action films provide an immersive experience that makes me feel like part of the [action](genre)."
+    - "I'm always excited to see the next big [action](genre) blockbuster hit the theaters."
+    - "[comedy](genre) movies always bring a smile to my face."
+    - "I have a soft spot for witty and lighthearted [comedy](genre) films."
+    - "My movie collection is filled with hilarious [comedy](genre) movies."
+    - "Whenever I need a good laugh, I turn to [comedy](genre) films."
+    - "I enjoy discussing the comedic timing and clever punchlines in [comedy](genre) movies."
+    - "[comedy](genre) films never fail to brighten my mood and make me laugh out loud."
+    - "[comedy](genre) films provide a much-needed escape and laughter therapy."
+    - "I'm drawn to the humorous characters and their amusing antics in [comedy](genre) movies."
+    - "Watching [comedy](genre) movies is a great way to unwind and forget about everyday worries."
+    - "I'm always up for a [comedy](genre) movie night with friends."
+    - "The[comedy][comedy](genre) chemistry between actors in movies is always a delight to watch."
+    - "I follow my favorite [comedy](genre) actors and directors for their latest projects."
+    - "[comedy](genre) movies offer a diverse range of humor, from slapstick to witty banter."
+    - "I can't resist a well-executed [comedy](genre) timing in a movie."
+    - "I'm fascinated by the art of physical [comedy](genre) in films."
+    - "[comedy](genre) movies often provide social commentary through satire and humor."
+    - "I'm always recommending [comedy](genre) movies to anyone in need of a good laugh."
+    - "The hilarious one-liners and quotable moments in [comedy](genre) films stay with me."
+    - "I appreciate the clever wordplay and humorous dialogue in [comedy](genre) movies."
+    - "[comedy](genre) movies bring people together through shared laughter and joy."
+    - "I find the situational [comedy](genre) and misunderstandings in movies highly entertaining."
+    - "I'm a fan of [comedy](genre) films that push the boundaries and challenge comedic norms."
+    - "[comedy](genre) movies remind me not to take life too seriously and to embrace laughter."
+    - "I enjoy discussing the [comedy](genre) themes and motifs in movies."
+    - "[comedy](genre) films offer a welcome break from reality and allow me to escape into laughter."
+    - "I love dissecting the [comedy](genre) performances and improvisation in comedy movies."
+    - "The soundtracks and [comedy](genre) sound effects in movies enhance the comedic experience."
+    - "I'm always excited to see how [comedy](genre) movies deliver clever twists and surprises."
+    - "[comedy](genre) movies make me appreciate the power of humor in storytelling."
+    - I'm intrigued by the different sub-genres of [comedy](genre), from romantic comedies to dark comedies."
+    - "I admire the comedic timing and versatility of actors in [comedy](genre) films."
+    - "[comedy](genre) films teach me to find humor even in the most mundane situations."
+    - "The physical [comedy](genre) and slapstick humor in movies never fail to make me chuckle."
+    - "I'm a fan of [comedy](genre) movies that use humor to address social issues and provoke thought."
+    - "[comedy](genre) movies keep me entertained and uplifted, even on the toughest days."
+    - "I appreciate the comedic direction and editing choices in [comedy](genre) films."
+    - "I'm always on the lookout for hidden gems in the [comedy](genre) genre."
+    - "[comedy](genre) movies remind me of the power of laughter to bring people together."
+    - "I love the clever twists and surprises that [comedy](genre) films often deliver."
+    - "The laughter and joy that [comedy](genre) movies bring are contagious and uplifting."
+    - "I'm always excited to see the next big [comedy](genre) hit the theaters."
+    - "[comedy](genre) films offer a light-hearted escape from the realities of life."
+    - "I can't resist the charm and hilarity of a well-crafted [comedy](genre) film."
+
+    
+
+- intent: suggest_movie
+  examples: |
+    - Can you recommend a movie?
+    - What's a good movie to watch?
+    - I want to watch a film, any suggestions?
+    - Could you suggest a movie for me?
+    - What movies do you recommend?
+    - Do you have any recommendations for films?
+    - What movies do you suggest?
+    - Can you recommend a good film?
+    - Could you suggest a movie for me?
+    - I'm in the mood for a movie, any suggestions?
+    - Any recommendations for films?
+    - What are some popular movies?
+    - Can you suggest a movie for a date night?
+    - I need a thrilling movie to watch.
+    - Are there any movies you can recommend?
+    - What movies should I add to my watch list?
+    - Can you recommend a movie for me?
+    - What's a good movie to watch?
+    - Suggest a movie, please.
+    - I'm bored, suggest a good movie.
+    - Could you suggest a film for tonight?
+    - I need a movie recommendation.
+    - What movie should I watch?
+    - Any movie suggestions?
+    - Can you give me a movie suggestion?
+    - I'm looking for a movie suggestion.
+    - Any movies?
+    - Suggest a movie for me.
+    - I want to watch a movie.
+    - What movies are currently popular?
+    - Do you have any recommendations for films?
+    - Can you suggest a movie please?
+    - I'm craving to watch a movie. Any suggestions?
+    - What are some movies that will make me feel good?
+    - I'm in the mood for a movie. Any recommendations?
+    - Any light-hearted movies to lift my spirits?
+    - Can you recommend a film?
+    - I want to watch a movie Any suggestions?
+    - What movies should I watch?
+    - I need to watch a movie. Any suggestions?
+    - Can you suggest a movie?
+    - I'm looking for a movie. Any ideas?
+    - Could you suggest a movie?
+    - What are some movies I can watch?
+    - I'm in the mood for a movie. Any recommendations?
+
